@@ -6,18 +6,11 @@ import UserTypings from "./components/UserTypings";
 import useEngine from "./hooks/useEngine";
 import { calculateAccuracyPercentage } from "./utils/helpers";
 import { CiTimer } from "react-icons/ci";
+import KeyboardReact from "react-simple-keyboard";
 
 const App = () => {
   const { words, typed, timeLeft, errors, state, restart, totalTyped } =
     useEngine();
-
-  const onChange = (input: any) => {
-    console.log("Input changed", input);
-  };
-
-  const onKeyPress = (button: any) => {
-    console.log("Button pressed", button);
-  };
 
   return (
     <div className="text-slate-500 grid place-items-center">
@@ -31,10 +24,12 @@ const App = () => {
           userInput={typed}
         />
       </WordsContainer>
+
       <RestartButton
         className={"mx-auto mt-10 text-slate-500"}
         onRestart={restart}
       />
+      {/* <KeyboardReact classname="w-4/5" theme="hg-theme-default" /> */}
       <Results
         className="mt-10"
         state={state}
@@ -48,7 +43,7 @@ const App = () => {
 
 const WordsContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative text-3xl max-w-full leading-relaxed break-all mt-3">
+    <div className="relative text-3xl w-1/2 leading-relaxed break-all mt-3">
       {children}
     </div>
   );

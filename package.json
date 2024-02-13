@@ -17,6 +17,7 @@
     "react-simple-keyboard": "^3.7.82",
     "simple-keyboard": "^3.7.56",
     "typescript": "^4.7.4",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

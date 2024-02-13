@@ -11,6 +11,15 @@ const UserTypings = ({
   className?: string;
 }) => {
   const typedCharacters = userInput.split("");
+  // const [play] = useSound(sound);
+
+  // const Normalplay = () => {
+  //   new Audio(sound).play();
+  // };
+
+  // const Spacebar = () => {
+  //   new Audio(spacebar).play();
+  // };
 
   return (
     <div className={className}>
