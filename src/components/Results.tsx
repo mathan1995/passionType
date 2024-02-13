@@ -50,7 +50,7 @@ const Results = ({
         </p>
         <p className="mt-0.5 text-sm/6 text-zinc-400">
           If you practice more your accuracy will be increased by 10X better. Go
-          On practive and deliver.
+          On practice and deliver.
         </p>
       </motion.li>
       <motion.li
